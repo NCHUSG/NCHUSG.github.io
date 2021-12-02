@@ -1,16 +1,9 @@
-# io_github_nchusg
+# nchusg.github.io
 
-A new Flutter project.
+![](https://img.shields.io/github/workflow/status/NCHUSG/NCHUSG.github.io/Flutter%20Web%20Build%20CI?logo=flutter&style=flat-square) ![](https://img.shields.io/github/license/NCHUSG/NCHUSG.github.io?color=blue&style=flat-square)
 
-## Getting Started
+第27屆學生會官方網站，目前還在架設中
 
-This project is a starting point for a Flutter application.
+[https://nchusg.github.io](https://nchusg.github.io)
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+*Built with flutter*
