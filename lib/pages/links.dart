@@ -9,36 +9,35 @@ class LinksPage extends StatefulWidget {
 }
 
 class _LinksPageState extends State<LinksPage> {
+  final ScrollController scrollController = ScrollController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(title: const Text('相關連結')),
         drawer: const MyDrawer(),
         body: Scrollbar(
+            controller: scrollController,
             isAlwaysShown: true,
             child: SingleChildScrollView(
+                controller: scrollController,
                 child: Padding(
                     padding: const EdgeInsets.symmetric(vertical: 10.0),
                     child: Center(
                         child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.center,
-                            children: [
-                          Text(
-                            '相關連結',
-                            style: Theme.of(context).textTheme.headline4,
-                          ),
-                          const LinkedCard(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: const [
+                          LinkedCard(
                               text: '資訊公開專區', url: 'https://reurl.cc/6Dnyx5'),
-                          const LinkedCard(
+                          LinkedCard(
                               text: '會長令、各部門公告',
                               url: 'https://reurl.cc/W3zM5y'),
-                          const LinkedCard(
+                          LinkedCard(
                               text: '第27屆總預算案', url: 'https://reurl.cc/8n7KbR'),
-                          const LinkedCard(
+                          LinkedCard(
                               text: '第27屆總決算案', url: 'https://reurl.cc/R0gXnx'),
-                          const LinkedCard(
+                          LinkedCard(
                               text: '學權申訴系統', url: 'https://reurl.cc/gzaRbL'),
-                          const LinkedCard(
+                          LinkedCard(
                               text: '社團海報張貼申請',
                               url: 'https://reurl.cc/kLapEG '),
                         ]))))));
