@@ -9,14 +9,17 @@ class PosterPage extends StatefulWidget {
 
 class _PosterPageState extends State<PosterPage> {
   double width = 500;
+  final ScrollController scrollController = ScrollController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(title: const Text('海報張貼系統')),
         drawer: const MyDrawer(),
         body: Scrollbar(
+          controller: scrollController,
           isAlwaysShown: true,
           child: SingleChildScrollView(
+              controller: scrollController,
               child: Center(
                   child: Padding(
                       padding: const EdgeInsets.all(10),
@@ -30,7 +33,7 @@ class _PosterPageState extends State<PosterPage> {
                             children: [
                               Text(
                                 '申請系統(測試中)',
-                                style: Theme.of(context).textTheme.headline4,
+                                style: Theme.of(context).textTheme.headline6,
                               ),
                               const SizedBox(height: 15),
                               const TextField(
